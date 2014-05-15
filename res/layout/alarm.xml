@@ -1,0 +1,113 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"  >
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#292929"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:text="Application"
+        android:textColor="#ffffff"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tvPrompt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="43dp"
+        android:text="Enter Alarm Time :"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPrompt_1"
+        android:layout_below="@+id/tvPrompt_1"
+        android:layout_marginTop="14dp"
+        android:background="#f0f0f0"
+        android:ems="10"
+        android:padding="5dp"
+        android:hint="HH:MM" >
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="210dp"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="64dp"
+        android:entries="@array/Items"
+        android:prompt="@string/prompt"
+        android:spinnerMode="dropdown" />
+    
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="28dp"
+        android:text="Choose Alarm Tone : "
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/volumeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginTop="25dp"
+        android:text="Change Volume Here"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome to the Alarm"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/setButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/volumeButton"
+        android:layout_below="@+id/volumeButton"
+        android:layout_marginTop="23dp"
+        android:text="Set Alarm"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/setButton"
+        android:layout_alignBottom="@+id/setButton"
+        android:layout_alignRight="@+id/spinner1"
+        android:text="Cancel Alarm"
+        android:textSize="15dp" />
+
+</RelativeLayout>
+
+</ScrollView>

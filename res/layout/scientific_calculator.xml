@@ -1,0 +1,298 @@
+<ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/result_id"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/textView1"
+        android:layout_height="50dp" >
+    </EditText>
+
+    <Button
+        android:id="@+id/Btnsin_id"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/result_id"
+        android:onClick="btnsinClicked"
+        android:text="sin" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btncos_id"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/result_id"
+        android:layout_toRightOf="@id/Btnsin_id"
+        android:onClick="btncosClicked"
+        android:text="cos" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btntan_id"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/result_id"
+        android:layout_toRightOf="@id/Btncos_id"
+        android:onClick="btntanClicked"
+        android:text="tan" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btnshift_id"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/result_id"
+        android:layout_toRightOf="@id/Btntan_id"
+        android:onClick="btnshiftClicked"
+        android:text="shift" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btn1_id"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btn4_id"
+        android:onClick="btn1Clicked"
+        android:text="1" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btn2_id"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btn5_id"
+        android:layout_toRightOf="@id/Btn1_id"
+        android:onClick="btn2Clicked"
+        android:text="2" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btn3_id"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btn6_id"
+        android:layout_toRightOf="@id/Btn2_id"
+        android:onClick="btn3Clicked"
+        android:text="3" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btn4_id"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btn7_id"
+        android:onClick="btn4Clicked"
+        android:text="4" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btn5_id"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btn8_id"
+        android:layout_toRightOf="@id/Btn4_id"
+        android:onClick="btn5Clicked"
+        android:text="5" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btn6_id"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btn9_id"
+        android:layout_toRightOf="@id/Btn5_id"
+        android:onClick="btn6Clicked"
+        android:text="6" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btn7_id"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btnsin_id"
+        android:onClick="btn7Clicked"
+        android:text="7" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btn8_id"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btncos_id"
+        android:layout_toRightOf="@id/Btn7_id"
+        android:onClick="btn8Clicked"
+        android:text="8" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btn9_id"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btntan_id"
+        android:layout_toRightOf="@id/Btn8_id"
+        android:onClick="btn9Clicked"
+        android:text="9" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btnclear_id"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btnshift_id"
+        android:layout_toRightOf="@id/Btn9_id"
+        android:onClick="btnclearClicked"
+        android:text="clear" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btnplus_id"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btnclear_id"
+        android:layout_toRightOf="@id/Btn6_id"
+        android:onClick="btnplusClicked"
+        android:text="+" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btnminus_id"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/Btnplus_id"
+        android:layout_toRightOf="@id/Btn3_id"
+        android:onClick="btnminusClicked"
+        android:text="-" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btn0_id"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btn1_id"
+        android:onClick="btn0Clicked"
+        android:text="0" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btndivide_id"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btn3_id"
+        android:layout_toRightOf="@id/Btn0_id"
+        android:onClick="btndivideClicked"
+        android:text="/" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btnmult_id"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btnminus_id"
+        android:layout_toRightOf="@id/Btndivide_id"
+        android:onClick="btnmultClicked"
+        android:text="*" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btnpower_id"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btn0_id"
+        android:onClick="btnpowerClicked"
+        android:text="^" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btnmod_id"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btndivide_id"
+        android:layout_toRightOf="@id/Btnpower_id"
+        android:onClick="btnmodClicked"
+        android:text="mod" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btnfact_id"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btnmult_id"
+        android:layout_toRightOf="@id/Btnmod_id"
+        android:onClick="btnfactClicked"
+        android:text="!" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btnsqrt_id"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btnpower_id"
+        android:onClick="btnsqrtClicked"
+        android:text="sqrt" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btnper_id"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btnmod_id"
+        android:layout_toRightOf="@id/Btnsqrt_id"
+        android:onClick="btnperClicked"
+        android:text="%" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btnlog_id"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btnfact_id"
+        android:layout_toRightOf="@id/Btnper_id"
+        android:onClick="btnlogClicked"
+        android:text="log" >
+    </Button>
+
+    <Button
+        android:id="@+id/Btnpermut_id"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btnsqrt_id"
+        android:onClick="btnpermutClicked"
+        android:text="nCr" >
+    </Button>
+    
+    <Button
+        android:id="@+id/Btnequal_id"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Btnper_id"
+        android:layout_toRightOf="@id/Btnpermut_id"
+        android:onClick="btnequalClicked"
+        android:text="=" >
+    </Button>
+
+    <ImageView
+        android:id="@+id/shiftImage"
+        android:layout_width="13dp"
+        android:layout_height="14dp"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignRight="@+id/result_id"
+        android:src="@drawable/shift" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Scientific Calculator"
+        android:textSize="25dp" />
+    
+</RelativeLayout>
+
+</ScrollView>
